@@ -32,7 +32,6 @@ public class ControlloRispostaServlet extends HttpServlet {
 			requestDispatcher = request.getRequestDispatcher("corretto.jsp");
 		else
 			requestDispatcher = request.getRequestDispatcher("sbagliato.jsp");
-		
 		request.setAttribute("risposta_addizione_attribute", rispostaUtente);
 		requestDispatcher.forward(request, response);
 	}
